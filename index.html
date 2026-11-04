@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A simple, thoughtful portfolio starter for your next idea.">
+  <meta name="color-scheme" content="light dark">
+  <title>Forma — A little more intentional.</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23d9f36d'/%3E%3Cpath d='M18 46V18h30v8H27v5h16v8H27v7' fill='%2320251e'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="header wrap">
+    <a class="brand" href="#" aria-label="Forma home"><span class="brand-mark" aria-hidden="true">f.</span> forma</a>
+    <button class="menu-toggle" aria-controls="navigation" aria-expanded="false" hidden>Menu <span aria-hidden="true">☰</span></button>
+    <nav id="navigation" aria-label="Main navigation">
+      <a href="#work">Selected work</a><a href="#about">The approach</a><a class="nav-contact" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Switch to dark theme" hidden>◐</button>
+  </header>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> A SPACE FOR YOUR NEXT IDEA</p>
+        <h1 id="hero-title">A little more<br><em>intentional.</em></h1>
+        <p class="intro">Good ideas deserve a thoughtful home. A simple starting point for the things you make, the work you love, and what comes next.</p>
+        <a class="button" href="#work">Explore the work <span aria-hidden="true">↗</span></a>
+        <p class="hero-note">Independent thinking. Considered design.</p>
+      </div>
+      <div class="hero-art" role="img" aria-label="Abstract green architectural arches on a warm cream background">
+        <span class="art-caption">FORM / FUNCTION / FEELING</span>
+        <div class="arch arch-back"></div><div class="arch arch-front"></div><div class="art-sphere"></div>
+        <div class="art-footer"><span>A study in simplicity</span><span>№ 001</span></div>
+      </div>
+    </section>
+    <div class="ticker" aria-label="Design principles"><div class="wrap">Less noise. More meaning. <span>✳</span> Made to feel different. <span>✳</span> Room for good ideas. <span>✳</span></div></div>
+    <section class="work wrap section" id="work" aria-labelledby="work-title">
+      <div class="section-heading"><div><p class="eyebrow">01 / SELECTED WORK</p><h2 id="work-title">Small details.<br>Big possibilities.</h2></div><p>Some ideas to get you started.<br>Replace these concepts with your own work.</p></div>
+      <div class="filters" role="group" aria-label="Filter projects" hidden><button class="active" data-filter="all" aria-pressed="true">All work</button><button data-filter="identity" aria-pressed="false">Identity</button><button data-filter="digital" aria-pressed="false">Digital</button></div>
+      <p class="sr-only" id="filter-status" role="status"></p>
+      <div class="project-grid">
+        <article class="project" data-category="identity"><div class="project-art olive"><span class="small-label">CONCEPT / 01</span><div class="olive-label">olive<span>EVERYDAY, A LITTLE SLOWER.</span></div><span class="art-bottom">Objects for intentional living.</span></div><div class="project-info"><h3>Olive & everyday</h3><span>Brand identity · Concept</span></div></article>
+        <article class="project" data-category="digital"><div class="project-art field"><span class="small-label">CONCEPT / 02</span><div class="field-window"><div class="window-bar"><span>fieldnotes.</span><span>☰</span></div><div class="window-content">Go somewhere<br><em>new.</em><div class="landscape"><span></span></div></div></div><span class="art-bottom">A different point of view.</span></div><div class="project-info"><h3>Fieldnotes</h3><span>Web design · Concept</span></div></article>
+      </div>
+    </section>
+    <section class="about wrap section" id="about" aria-labelledby="about-title"><div><p class="eyebrow">02 / THE APPROACH</p><h2 id="about-title">Keep it simple.<br>Make it matter.</h2><p class="about-intro">This space is yours. Use it to introduce your business, share your portfolio, or give your next project a place to begin.</p></div><div class="principles"><div><span>01</span><div><h3>Start with purpose</h3><p>Tell people what you do and why it matters. A clear story is always a good place to start.</p></div></div><div><span>02</span><div><h3>Let the work speak</h3><p>Show the projects you care about. Give each one enough space to make an impression.</p></div></div><div><span>03</span><div><h3>Make a connection</h3><p>Keep the next step easy. An introduction can be the start of something good.</p></div></div></div></section>
+    <section class="contact wrap" id="contact" aria-labelledby="contact-title"><p class="eyebrow">03 / WHAT’S NEXT?</p><div class="contact-row"><h2 id="contact-title">Have something<br>in <em>mind?</em></h2><a class="button" href="mailto:hello@example.com">Say hello <span aria-hidden="true">↗</span></a></div><p class="contact-note">Your next chapter starts with a conversation.</p></section>
+  </main>
+  <footer class="wrap footer"><a class="brand" href="#">forma<span class="accent">.</span></a><p>© <span id="year">2026</span> Forma. Make it your own.</p><a href="#">Back to top ↑</a></footer>
+</body>
+</html>
