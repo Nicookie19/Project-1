@@ -1,6 +1,6 @@
 # Forma — a simple static website
 
-A responsive starter made with HTML, CSS, and JavaScript. No npm, framework, database, external fonts, or build step. Includes a mobile menu, project filters, and a saved light/dark preference. All artwork is CSS.
+A responsive starter made with HTML, CSS, and JavaScript. No npm, framework, database, external fonts, or build step. Includes a mobile menu, project filters, expandable project descriptions, project-to-inquiry shortcuts, a validated contact form, downloadable inquiries, and a saved light/dark preference. The theme initially follows the visitor’s system preference. All artwork is CSS.
 
 ## Preview
 
@@ -15,7 +15,10 @@ Visit http://localhost:8080. Stop the server with Ctrl+C.
 ## Customize before publishing
 
 - In `index.html`, replace the Forma name, description, introductory text, and example projects with your own content. The two projects are illustrative concepts.
-- Replace `hello@example.com` in the contact link with your email address. This link opens the visitor's email application; there is no form or email backend.
+- The contact address is `nmahipus_240000001368@uic.edu.ph`. To change it, edit the `href` of `#contact-email` in `index.html`; the form reads the same address automatically.
+- The contact form validates name, email, subject, and message, then opens a prefilled email draft. Visitors must send it from their email app. It does not send email automatically, persist inquiries, or claim successful delivery. Long messages can be downloaded as a text file and emailed manually.
+- The website needs no backend. Receiving submissions directly through the website would require a separate server endpoint or form service.
+- Project details remain available without JavaScript; the direct email link and navigation also work. Interactive filters and the inquiry form appear only when JavaScript is available.
 - Change the colors in `styles.css` under `:root` and `body.dark`.
 - Only `index.html`, `styles.css`, and `script.js` need to be served publicly.
 
